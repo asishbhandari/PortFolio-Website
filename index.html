@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asish-Portfolio-Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./mediaquerry.css">
+</head>
+<body>
+    <!-- Navigation Links -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark" style="background-color: #3B71CA;">
+        <div class="container">
+          <a class="navbar-brand" href="#">Asish Bhandari</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item ps-3">
+                <a class="nav-link" href="#AboutMe">About Me</a>
+              </li>
+              <li class="nav-item ps-3">
+                <a class="nav-link" href="#Skill">Skills</a>
+              </li>
+              <li class="nav-item ps-3">
+                <a class="nav-link" href="#Portfolio">Portfolio</a>
+              </li>
+              <!-- <li class="nav-item ps-3">
+                <a class="nav-link" href="#Resume">Resume/CV</a>
+              </li> -->
+              <li class="nav-item ps-3">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Home section -->
+    <section id="Home" class="container-fluid " >
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 home_section_div " >
+          <img src="./assets/Untitled-1.jpg" alt="Asish" class="home_section_img"  >
+        </div>
+        <div class="home_section__text col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Asish Bhandari</h1>
+          <p class="section__text__p2"><span id="typewritter"></span> <span id="type_cursor">|</span> Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/Asish_Bhandari_Resume_web_developer.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#Contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://linkedin.com/in/asish-bhandari-4b88a7138/'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/asishbhandari'"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="AboutMe">
+      <h1 style="text-align: center;" class="mb-4 pt-3">About Me</h1>
+      <div class="row">
+        <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12 about_section_div">
+          <img class="about_section_img" src="./assets/character-software-developers-working-of-script-.png" alt="coding picture">
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 mt-sm-4 ">
+          <div class="d-flex flex-wrap justify-content-center">
+              <div class="about_details_container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>2+ years <br />Frontend Development</p>
+              </div>
+              <div class="about_details_container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.Tech<br />M.Tech (C.S.E)</p>
+              </div>
+          </div>
+          <p class="about_section_intro">
+            Hello i'm  Asish Bhandari a full stack web developer having proficiency in 
+            languages such as HTML, CSS, and JavaScript for crafting visually appealing 
+            and responsive user interfaces, Proficient in popular front-end frameworks 
+            such as React. On the back-end, my expertise extends to server-side 
+            scripting with languages like Node.js, and framwork like express.js. 
+            I have alse worked with databases like postgress and mongoDb, implementing 
+            server logic, and integrating APIs to ensure seamless communication between 
+            the client and server.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill Section -->
+    <section id="Skill" class="container">
+      <h1 style="text-align: center;" class="mb-4 pt-3">Skills</h1>
+      <div class="row accordion">
+        <div class="col-12 col-md-6 mb-4"> 
+          <div class="accordion-item col-12 ">
+            <div class="accordion-div collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <img src="./assets/front.png" alt="Front-End" height="30px" width="30px">
+              <div class="d-flex flex-column " >
+                <h5 class="accordion-header" style="color: #3B71CA;" id="headingOne" >
+                    Front-End Development
+                </h5>
+                <h6 style="color: #cbc6bc;">2 years experience</h6>
+              </div>
+            </div>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>JavaScript</li>
+                    <li>ReactJs</li>
+                    <li>NextJs</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4"> 
+          <div class="accordion-item col-12 ">
+            <div class="accordion-div collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <img src="./assets/back.png" alt="Front-End" height="30px" width="30px">
+              <div class="d-flex flex-column " >
+                <h5 class="accordion-header" style="color: #3B71CA;" id="headingOne" >
+                    Back-End Development
+                </h5>
+                <h6 style="color: #cbc6bc;">1 years experience</h6>
+              </div>
+            </div>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>NodeJs</li>
+                  <li>ExpressJs</li>
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                  <li>RESTful APIs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4"> 
+          <div class="accordion-item col-12 ">
+            <div class="accordion-div collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <img src="./assets/git.png" alt="Front-End" height="30px" width="30px">
+              <div class="d-flex flex-column " >
+                <h5 class="accordion-header" style="color: #3B71CA;" id="headingOne" >
+                  Version Control
+                </h5>
+                <h6 style="color: #cbc6bc;">2 years experience</h6>
+              </div>
+            </div>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>Git</li>
+                  <li>Github</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4"> 
+          <div class="accordion-item col-12 ">
+            <div class="accordion-div collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <img src="./assets/devops.png" alt="Front-End" height="30px" width="30px">
+              <div class="d-flex flex-column " >
+                <h5 class="accordion-header" style="color: #3B71CA;" id="headingOne" >
+                  DevOps and Deployment
+                </h5>
+                <h6 style="color: #cbc6bc;">1 years experience</h6>
+              </div>
+            </div>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>AWS</li>
+                  <li>Heroku</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="accordion row" id="accordion">
+      </div> -->
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="Portfolio">
+      <h1 style="text-align: center;" class="mb-4 pt-3">Projects</h1>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+              <img src="./assets/robomonster.png" class="carousel_img " alt="...">
+              <div class="card col-12 col-md-6">
+                <div class="card-body">
+                  <h4 class="card-title">Robo Monster List</h4>
+                  <p class="card-text">An interactive search list that conatins list of mosters and a search bar to seach the 
+                    monster by the name if it exist
+                  </p>
+                  <a href="https://asishbhandari.github.io/RoboReact/" class="btn btn-primary">Visit -></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+              <img src="./assets/tic-tak-toe.png" class="carousel_img "  alt="...">
+              <div class="card col-12 col-md-6">
+                <div class="card-body">
+                  <h4 class="card-title">Tic-Tac-Toe</h4>
+                  <p class="card-text">An interesting and interactive game which everone can play and win. try playing it yourself </p>
+                  <a href="https://asishbhandari.github.io/tic-tak-toe/" class="btn btn-primary">Visit -></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+              <img src="./assets/aimScholar.png" class="carousel_img"  alt="...">
+              <div class="card col-12 col-md-6">
+                <div class="card-body">
+                  <h4 class="card-title">Educational Website</h4>
+                  <p class="card-text">A fully responsive education website that contains Navbar and sections like categories, 
+                    courses offered , FAQ's, testimonials and footer .
+                  </p>
+                  <a href="https://asishbhandari.github.io/Aim-Scholar-Project/" class="btn btn-primary">Visit -></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact Sexction -->
+    <section id="Contact">
+      <h6 style="text-align: center;" class="pt-3">Get In Touch</h6>
+      <h1 style="text-align: center;" class="mb-4 pt-1">Contact Me</h1>
+      <div class="contact_section d-flex justify-content-center align-items-center flex-column flex-md-row">
+        <div class="contact_Section_item d-flex justify-content-center align-items-center pe-md-4 me-md-4">
+          <img src="./assets/email.png" alt="emailId">
+          <p class="ps-2 pt-3"><a href="mailto:asish.bhandari17@gmail.com" class="contact_section_links">asish.bhandari17@gmail.com </a></p>
+        </div>
+        <div class="contact_Section_item d-flex justify-content-center align-items-center">
+          <img src="./assets/linkedin.png" style="text-align: center;" alt="emailId">
+          <p class="ps-2 pt-3" ><a href='https://linkedin.com/in/asish-bhandari-4b88a7138/' class="contact_section_links">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">Copyright &#169; Asish Bhandari. All rights reserved</footer>
+    <script src="./script/script.js"></script>
+</body>
+</html>

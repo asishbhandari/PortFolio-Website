@@ -1,0 +1,220 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+section{
+    margin:4% 0;
+    padding-top: 50px;
+}
+#Home{
+    margin: 6rem 0;
+}
+.home_section_div{
+    padding-right: 2rem;
+    text-align: right;
+    margin: auto 0;
+}
+.home_section_img{
+    border-radius: 50%;
+    width: 60%;
+}
+.home_section__text{
+    margin: auto 0;
+    text-align: center;
+    padding-right: 10%;
+    align-self: center;
+}
+.home_section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+  }
+  
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#typewritter{
+  color: #3B71CA;
+  font-weight: bold;
+}
+
+#type_cursor{
+  color: #3B71CA;
+  font-weight: bold;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  
+.icon{
+    cursor: pointer;
+    height: 2rem;  
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 2rem;
+}
+  
+.btn-color-1{
+  border: #3B71CA 0.1rem solid;
+  background: #3B71CA;
+  color: white;
+}
+.btn-color-1:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.btn-color-2 {
+  border: #3B71CA 0.1rem solid;
+}
+
+.btn-color-2:hover {
+  cursor: pointer;
+  background: #3B71CA;
+  color: white;
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+
+/* about Me section */
+#AboutMe{
+  background-color:#c0e6f0;
+}
+.about_section_div{
+    text-align: center;
+    margin: auto 0;
+}
+.about_section_img{
+    width: 80%;
+}
+.about_section_intro{
+  text-align: left;
+  padding: 1rem 2rem 1rem 0;
+}
+.about_details_container{
+  padding: 1rem;
+}
+
+/* Skill section */
+#accordion{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.accordion-div{
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+  padding: .5rem;
+}
+
+.accordion-div::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+}
+
+.accordion-body ul li::marker {
+  content: '✓  ';
+  color: blue;
+}
+
+#Portfolio{
+  background-color:#c0e6f0;
+  padding-bottom: 2rem;
+}
+.carousel_img{
+  width: 400px;
+  height: 400px;
+  padding: 1rem .5rem;
+}
+.card-body{
+  background-color: #c0e6f0;
+}
+.card-title{
+  font-weight: bold;
+  color: #3B71CA;
+}
+.carousel-control-prev-icon { background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300f' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); }
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300f' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-indicators .active {
+  background-color: #3B71CA;
+}
+
+#Contact{
+  padding-bottom: 100px;
+}
+.contact_Section_item img{
+  width: 20px;
+}
+.contact_section{
+  margin: 0.5rem auto;
+  width: 60vw;
+  height: 100px;
+  border-radius: 2rem;
+  border: 0.2rem solid #3B71CA;
+}
+.contact_section_links{
+  text-decoration: none;
+  color: #3B71CA;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #3B71CA;
+  color: whitesmoke;
+}
